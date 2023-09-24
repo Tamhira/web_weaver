@@ -1,0 +1,377 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* ------------------------------------- */
+
+/* CSS Variables */
+:root{
+    background-color: white;
+}
+.indented-text {
+    text-indent: 250px; 
+}
+/* ------------------------------------- */
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px ;
+    z-index: 100;
+}
+
+/* Navigation Bar Logo and Image */
+#logo{
+    margin: 8px 8px;
+}
+#logo img{
+    height: 60px;
+    width: 180px;
+}
+
+/* Navigation Bar List Styling */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color:white;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 18px;
+}
+#navbar ul li a{
+    color: black;
+    display: block ;
+    padding: 5px 15px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+#navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 35px; /* Add some right margin for spacing */
+    width: 80%; /* Ensure the list takes up the full width */
+    padding-right: 0; /* Remove any default padding */
+}
+#navbar ul li a:hover{
+    color: white;
+    background-color: orange;
+}
+/* ------------------------------------- */
+
+/* Home Section */
+#home-container {
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#home-container .text{
+    margin-left: 80px;
+}
+#home-container .text .heading{
+    font-size: 40px;
+}
+#home-container .text p:nth-child(2){
+    color: orange;
+    font-weight: bold;
+}
+#home-container .text h1{
+    font-size: 90px;
+}
+#home-container .text p{
+    font-size: 25px;
+}
+#home-container .btn{
+    margin-top: 20px;
+    padding: 15px 45px;
+    color: white;
+    background-color: orange;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/* ------------------------------------- */
+
+/* About Section */
+#about-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* #about-container .heading{
+    font-size: 70px;
+    font-weight: bold;
+} */
+#about-container p{
+    font-size: 25px;
+}
+#about-container .text img{
+    width: 750px;
+    height: 300px;
+}
+.image img {
+    /* Adjust the margin or padding as needed to control spacing */
+    margin-left: 20px;
+    width: 500px;
+}
+.text {
+    /* Adjust the margin or padding as needed to control spacing */
+    margin-right: 80px;
+    margin-left: 50px;
+}
+/* ------------------------------------- */
+
+/* Services Section */
+.heading{
+    font-size: 70px;
+    font-weight: bold;
+}
+#services-container .heading{
+    text-align: center;
+}
+#services-container p{
+    font-size: 25px;
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: center;
+}
+#services{
+    margin: 60px;
+    display: flex;
+}
+#services .box{ 
+    /* width: 350px; */
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    background: #f2f2f2b8;
+    margin-bottom: 20px;
+}
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+#services .box p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 5px;
+    font-size: 20px;
+}
+#services-container .heading{
+    text-align: center;
+}
+#services-container p{
+    font-size: 25px;
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: center;
+}
+.h-secondary{
+    text-align: center;
+    font-weight: bold;
+}
+/* ------------------------------------- */
+
+/* Project Section */
+#project-container .heading{
+    text-align: center;
+}
+#project-container p{
+    font-size: 25px;
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: center;
+}
+#buttons {
+    display: flex;
+    justify-content: center; /* Horizontally center-align */
+    align-items: center; /* Vertically center-align */
+    margin-top: 20px; /* Adjust the margin-top as needed */
+}
+
+.btn {
+    padding: 10px 15px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px; /* Add margin between buttons if desired */
+}
+
+#project-container .btn:hover {
+    color: white;
+    background-color: orange;
+    cursor: pointer;
+}
+#projects{
+    margin: 60px;
+    display: flex;
+    justify-content: center; /* Horizontally center-align */
+    align-items: center; /* Vertically center-align */
+    margin-top: 20px; /* Adjust the margin-top as needed */
+}
+#projects .box{ 
+    /* width: 350px; */
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#projects .box img{ 
+   height: 350px;
+   margin: auto;
+   display: block;
+}
+#projects .box p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 5px;
+    font-size: 20px;
+}
+#projects .h-secondary{
+    color: orange;
+    text-align: center;
+    font-weight: bolder;
+}
+/* ------------------------------------- */
+
+/* Testimonial Section */
+#testimonial-container .heading{
+    text-align: center;
+}
+#testimonial-container p{
+    font-size: 25px;
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: center;
+}
+#testimonial{
+    margin: 60px;
+    display: flex;
+    justify-content: center; /* Horizontally center-align */
+    align-items: center; /* Vertically center-align */
+    margin-top: 20px; /* Adjust the margin-top as needed */
+}
+#testimonial .box{ 
+    width: 1200px;
+    border: none;
+    padding: 5px;
+    margin: 0px;
+    border-radius: 10px;
+    background: #f2f2f2b8;
+}
+#testimonial .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#testimonial .box p{
+    margin: 0px;
+    text-align: left;
+}
+#testimonial .box p:nth-child(2){
+    font-weight: bold;
+}
+#testimonial img{
+    width: 250px;
+    height: 250px;
+}
+/* ------------------------------------- */
+
+/* Contact Section */
+#contact-container{
+    margin-bottom: 50px;
+}
+#contact-container .heading{
+    text-align: center;
+}
+#contact-container p{
+    font-size: 25px;
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: center;
+}
+#contact {
+    display: flex;
+    justify-content: center; /* Horizontally center-align */
+    align-items: center; /* Vertically center-align */
+    margin-top: 20px; /* Adjust the margin-top as needed */
+}
+#contact .form input{
+    width: 450px;
+    margin: 15px;
+    padding: 17px;
+    border-radius: 5px;
+}
+#contact .btn{
+    width: 100px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: orange;
+    border: none;
+}
+/* ------------------------------------- */
+
+/* Extra Section */
+#extra-container {
+    background: #f2f2f2b8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px;
+}
+.extra img {
+    width: 300px;
+    margin: 10px; 
+}
+#extra-container ul {
+    display: flex;
+    list-style: none;
+    justify-content: center; /* Center-align the list items horizontally */
+}
+#extra-container ul li a{
+    color: black;
+    font-size: 18px;
+    display: block ;
+    padding: 5px 15px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+/* ------------------------------------- */
+
+/* Footer Section */
+footer{
+    font-size: 18px;
+    text-align: center;
+    background: rgb(78, 73, 73);
+    color: white;
+    padding: 22px;
+}
+footer span {
+    color: orange; /* Set the color to orange */
+    font-weight: bold; /* Set the font weight to bold */
+}
